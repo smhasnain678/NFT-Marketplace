@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Marketplace</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-transparent px-md-4 px-0">
+        <div class="container-fluid d-flex w-100 justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img class="img-fluid me-2" style="width: 25px;" src="images/Storefront.png" alt="Storefront">
+                <a href="index.html" class="navbar-brand text-light" style="font-family: Space Mono, monospace;">NFT
+                    Marketplace</a>
+            </div>
+
+            <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse p-3 px-0" id="navbarNav">
+                <ul style="font-family: Work Sans, sans-serif;"
+                    class="fw-semibold navbar-nav ms-auto d-flex flex-column flex-lg-row fs-7 gap-2 gap-lg-4 me-4 align-items-start align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link text-white" href="marketplace.html">Marketplace</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="rankings.html">Rankings</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="wallet.html">Connect a wallet</a></li>
+                    <li class="slight-hover nav-item btn bg-purple align-items-center fs-7 d-flex rounded-4 px-4"> <img
+                            src="images/User.png" alt=""> <a class="nav-link text-white fw-semibold"
+                            href="account.html">Sign
+                            Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- top creaters -->
+    <section class="py-0">
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-12">
+                    <div class="box px-4 py-3">
+                        <h1>Top Creaters</h1>
+                        <p>Check out top ranking NFT artists on the NFT Marketplace.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-0" style=" border-bottom: 4px solid #2B2B2B">
+        <div class="container">
+            <div class="row px-4 px-md-0">
+                <div class="col-3">
+                    <div class="box d-flex align-items-center justify-content-center gap-2 py-3"
+                        style="border-bottom: 2px solid #858584;">
+                        <h6 class="mb-0 d-none d-md-block">Today</h6>
+                        <h6 class="mb-0 d-block d-md-none">1D</h6>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="box d-flex align-items-center justify-content-center gap-2 py-3">
+                        <h6 class="mb-0 text-lite d-none d-md-block">This Week</h6>
+                        <h6 class="mb-0 text-lite d-block d-md-none">7D</h6>
+                    </div>
+                </div>
+                <div class="col-2 col-md-3">
+                    <div class="box d-flex align-items-center justify-content-center gap-2 py-3">
+                        <h6 class="mb-0 text-lite d-none d-md-block">This Month</h6>
+                        <h6 class="mb-0 text-lite d-block d-md-none">30D</h6>
+                    </div>
+                </div>
+                <div class="col-4 col-md-3">
+                    <div class="box d-flex align-items-center justify-content-center gap-2 py-3">
+                        <h6 class="mb-0 text-lite">All Time</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="py-5">
+            <div class="container">
+                <div class="row g-4 px-4 px-md-0 pb-5">
+                    <div class="d-flex py-2 rounded-4"
+                        style="font-family: Space mano, monospace; border: 1px solid #3B3B3B;">
+                        <div class="col-6 d-flex align-items-center ms-2 ms-md-4">
+                            <span class="fw-light text-lite me-3 me-md-5">#</span>
+                            <span class="fw-light text-lite">Artist</span>
+                        </div>
+                        <div class="col-2 fw-light text-lite d-none d-md-block">Change</div>
+                        <div class="col-2 fw-light text-lite d-none d-md-block">NFTs Sold</div>
+                        <div class="col-6 col-md-2 fw-light text-lite text-end text-md-start pe-4 pe-md-0">Volume</div>
+                    </div>
+
+                    <div class="d-flex rounded-4 bg-cardbg py-2 align-items-center">
+                        <div class="col-8 col-md-6 d-flex align-items-center ms-0 ms-md-4">
+                            <div class="custom-bg text-lite text-center rounded-circle d-flex align-items-center justify-content-center fs-7 me-2 me-md-4"
+                                style="width: 25px; height: 25px;">1</div>
+                            <img src="images/rank-1.png" class="rounded-circle me-3 d-none d-lg-block" alt="avatar1">
+                            <img style="width: 30px;" src="images/rank-1.png" class="rounded-circle me-3 d-block d-lg-none" alt="avatar1">
+                            <span class="fw-semibold d-none d-md-block">Jaydon Ekstrom Bothman</span>
+                            <span class="fw-light d-block d-md-none">Jaydon Ekstrom</span>
+                        </div>
+                        <div class="fontFamily col-2 text-green fw-semibold d-none d-md-block">+1.41%</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">602</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">12.4 ETH</div>
+                        <div class="fontFamily col-2 pe-3 d-block d-md-none fs-7 ms-4 text-light" style="white-space: nowrap;">12.4 ETH</div>
+                    </div>
+                    <div class="d-flex rounded-4 bg-cardbg py-2 align-items-center">
+                        <div class="col-8 col-md-6 d-flex align-items-center ms-0 ms-md-4">
+                            <div class="custom-bg text-lite text-center rounded-circle d-flex align-items-center justify-content-center fs-7 me-2 me-md-4"
+                                style="width: 25px; height: 25px;">2</div>
+                            <img src="images/rank-2.png" class="rounded-circle me-3 d-none d-lg-block" alt="avatar1">
+                            <img style="width: 30px;" src="images/rank-2.png" class="rounded-circle me-3 d-block d-lg-none" alt="avatar1">
+                            <span class="fw-semibold d-none d-md-block">Ruben Carder</span>
+                            <span class="fw-light d-block d-md-none">Ruben Carder</span>
+                        </div>
+                        <div class="fontFamily col-2 text-green fw-semibold d-none d-md-block">+1.41%</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">602</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">12.4 ETH</div>
+                        <div class="fontFamily col-2 pe-3 d-block d-md-none fs-7 ms-4 text-light" style="white-space: nowrap;">12.4 ETH</div>
+                    </div>
+                    <div class="d-flex rounded-4 bg-cardbg py-2 align-items-center">
+                        <div class="col-8 col-md-6 d-flex align-items-center ms-0 ms-md-4">
+                            <div class="custom-bg text-lite text-center rounded-circle d-flex align-items-center justify-content-center fs-7 me-2 me-md-4"
+                                style="width: 25px; height: 25px;">3</div>
+                            <img src="images/rank-3.png" class="rounded-circle me-3 d-none d-lg-block" alt="avatar1">
+                            <img style="width: 30px;" src="images/rank-3.png" class="rounded-circle me-3 d-block d-lg-none" alt="avatar1">
+                            <span class="fw-semibold d-none d-md-block">Alfredo Septimus</span>
+                            <span class="fw-light d-block d-md-none">Alfredo Septimus</span>
+                        </div>
+                        <div class="fontFamily col-2 text-green fw-semibold d-none d-md-block">+1.41%</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">602</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">12.4 ETH</div>
+                        <div class="fontFamily col-2 pe-3 d-block d-md-none fs-7 ms-4 text-light" style="white-space: nowrap;">12.4 ETH</div>
+                    </div>
+                    <div class="d-flex rounded-4 bg-cardbg py-2 align-items-center">
+                        <div class="col-8 col-md-6 d-flex align-items-center ms-0 ms-md-4">
+                            <div class="custom-bg text-lite text-center rounded-circle d-flex align-items-center justify-content-center fs-7 me-2 me-md-4"
+                                style="width: 25px; height: 25px;">4</div>
+                            <img src="images/rank-4.png" class="rounded-circle me-3 d-none d-lg-block" alt="avatar1">
+                            <img style="width: 30px;" src="images/rank-4.png" class="rounded-circle me-3 d-block d-lg-none" alt="avatar1">
+                            <span class="fw-semibold d-none d-md-block">Davis Franci</span>
+                            <span class="fw-light d-block d-md-none">Davis Franci</span>
+                        </div>
+                        <div class="fontFamily col-2 text-green fw-semibold d-none d-md-block">+1.41%</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">602</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">12.4 ETH</div>
+                        <div class="fontFamily col-2 pe-3 d-block d-md-none fs-7 ms-4 text-light" style="white-space: nowrap;">12.4 ETH</div>
+                    </div>
+                    <div class="d-flex rounded-4 bg-cardbg py-2 align-items-center">
+                        <div class="col-8 col-md-6 d-flex align-items-center ms-0 ms-md-4">
+                            <div class="custom-bg text-lite text-center rounded-circle d-flex align-items-center justify-content-center fs-7 me-2 me-md-4"
+                                style="width: 25px; height: 25px;">5</div>
+                            <img src="images/rank-5.png" class="rounded-circle me-3 d-none d-lg-block" alt="avatar1">
+                            <img style="width: 30px;" src="images/rank-5.png" class="rounded-circle me-3 d-block d-lg-none" alt="avatar1">
+                            <span class="fw-semibold d-none d-md-block">Livia Rosser</span>
+                            <span class="fw-light d-block d-md-none">Livia Rosser</span>
+                        </div>
+                        <div class="fontFamily col-2 text-green fw-semibold d-none d-md-block">+1.41%</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">602</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">12.4 ETH</div>
+                        <div class="fontFamily col-2 pe-3 d-block d-md-none fs-7 ms-4 text-light" style="white-space: nowrap;">12.4 ETH</div>
+                    </div>
+                    <div class="d-flex rounded-4 bg-cardbg py-2 align-items-center">
+                        <div class="col-8 col-md-6 d-flex align-items-center ms-0 ms-md-4">
+                            <div class="custom-bg text-lite text-center rounded-circle d-flex align-items-center justify-content-center fs-7 me-2 me-md-4"
+                                style="width: 25px; height: 25px;">6</div>
+                            <img src="images/rank-6.png" class="rounded-circle me-3 d-none d-lg-block" alt="avatar1">
+                            <img style="width: 30px;" src="images/rank-6.png" class="rounded-circle me-3 d-block d-lg-none" alt="avatar1">
+                            <span class="fw-semibold d-none d-md-block">Kianna Donin</span>
+                            <span class="fw-light d-block d-md-none">Kianna Donin</span>
+                        </div>
+                        <div class="fontFamily col-2 text-green fw-semibold d-none d-md-block">+1.41%</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">602</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">12.4 ETH</div>
+                        <div class="fontFamily col-2 pe-3 d-block d-md-none fs-7 ms-4 text-light" style="white-space: nowrap;">12.4 ETH</div>
+                    </div>
+                    <div class="d-flex rounded-4 bg-cardbg py-2 align-items-center">
+                        <div class="col-8 col-md-6 d-flex align-items-center ms-0 ms-md-4">
+                            <div class="custom-bg text-lite text-center rounded-circle d-flex align-items-center justify-content-center fs-7 me-2 me-md-4"
+                                style="width: 25px; height: 25px;">7</div>
+                            <img src="images/rank-7.png" class="rounded-circle me-3 d-none d-lg-block" alt="avatar1">
+                            <img style="width: 30px;" src="images/rank-7.png" class="rounded-circle me-3 d-block d-lg-none" alt="avatar1">
+                            <span class="fw-semibold d-none d-md-block">Phillip Lipshutz</span>
+                            <span class="fw-light d-block d-md-none">Phillip Lipshutz</span>
+                        </div>
+                        <div class="fontFamily col-2 text-green fw-semibold d-none d-md-block">+1.41%</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">602</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">12.4 ETH</div>
+                        <div class="fontFamily col-2 pe-3 d-block d-md-none fs-7 ms-4 text-light" style="white-space: nowrap;">12.4 ETH</div>
+                    </div>
+                    <div class="d-flex rounded-4 bg-cardbg py-2 align-items-center">
+                        <div class="col-8 col-md-6 d-flex align-items-center ms-0 ms-md-4">
+                            <div class="custom-bg text-lite text-center rounded-circle d-flex align-items-center justify-content-center fs-7 me-2 me-md-4"
+                                style="width: 25px; height: 25px;">8</div>
+                            <img src="images/rank-8.png" class="rounded-circle me-3 d-none d-lg-block" alt="avatar1">
+                            <img style="width: 30px;" src="images/rank-8.png" class="rounded-circle me-3 d-block d-lg-none" alt="avatar1">
+                            <span class="fw-semibold d-none d-md-block">Maria Rosser</span>
+                            <span class="fw-light d-block d-md-none">Maria Rosser</span>
+                        </div>
+                        <div class="fontFamily col-2 text-green fw-semibold d-none d-md-block">+1.41%</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">602</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">12.4 ETH</div>
+                        <div class="fontFamily col-2 pe-3 d-block d-md-none fs-7 ms-4 text-light" style="white-space: nowrap;">12.4 ETH</div>
+                    </div>
+                    <div class="d-flex rounded-4 bg-cardbg py-2 align-items-center">
+                        <div class="col-8 col-md-6 d-flex align-items-center ms-0 ms-md-4">
+                            <div class="custom-bg text-lite text-center rounded-circle d-flex align-items-center justify-content-center fs-7 me-2 me-md-4"
+                                style="width: 25px; height: 25px;">9</div>
+                            <img src="images/rank-9.png" class="rounded-circle me-3 d-none d-lg-block" alt="avatar1">
+                            <img style="width: 30px;" src="images/rank-9.png" class="rounded-circle me-3 d-block d-lg-none" alt="avatar1">
+                            <span class="fw-semibold d-none d-md-block">Kianna Stanton</span>
+                            <span class="fw-light d-block d-md-none">Kianna Stanton</span>
+                        </div>
+                        <div class="fontFamily col-2 text-green fw-semibold d-none d-md-block">+1.41%</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">602</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">12.4 ETH</div>
+                        <div class="fontFamily col-2 pe-3 d-block d-md-none fs-7 ms-4 text-light" style="white-space: nowrap;">12.4 ETH</div>
+                    </div>
+                    <div class="d-flex rounded-4 bg-cardbg py-2 align-items-center">
+                        <div class="col-8 col-md-6 d-flex align-items-center ms-0 ms-md-4">
+                            <div class="custom-bg text-lite text-center rounded-circle d-flex align-items-center justify-content-center fs-7 me-2 me-md-4"
+                                style="width: 25px; height: 25px;">10</div>
+                            <img src="images/rank-10.png" class="rounded-circle me-3 d-none d-lg-block" alt="avatar1">
+                            <img style="width: 30px;" src="images/rank-10.png" class="rounded-circle me-3 d-block d-lg-none" alt="avatar1">
+                            <span class="fw-semibold d-none d-md-block">Angel Lubin</span>
+                            <span class="fw-light d-block d-md-none">Angel Lubin</span>
+                        </div>
+                        <div class="fontFamily col-2 text-green fw-semibold d-none d-md-block">+1.41%</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">602</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">12.4 ETH</div>
+                        <div class="fontFamily col-2 pe-3 d-block d-md-none fs-7 ms-4 text-light" style="white-space: nowrap;">12.4 ETH</div>
+                    </div>
+                    <div class="d-flex rounded-4 bg-cardbg py-2 align-items-center">
+                        <div class="col-8 col-md-6 d-flex align-items-center ms-0 ms-md-4">
+                            <div class="custom-bg text-lite text-center rounded-circle d-flex align-items-center justify-content-center fs-7 me-2 me-md-4"
+                                style="width: 25px; height: 25px;">11</div>
+                            <img src="images/rank-11.png" class="rounded-circle me-3 d-none d-lg-block" alt="avatar1">
+                            <img style="width: 30px;" src="images/rank-11.png" class="rounded-circle me-3 d-block d-lg-none" alt="avatar1">
+                            <span class="fw-semibold d-none d-md-block">Allison Torff</span>
+                            <span class="fw-light d-block d-md-none">Allison Torff</span>
+                        </div>
+                        <div class="fontFamily col-2 text-green fw-semibold d-none d-md-block">+1.41%</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">602</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">12.4 ETH</div>
+                        <div class="fontFamily col-2 pe-3 d-block d-md-none fs-7 ms-4 text-light" style="white-space: nowrap;">12.4 ETH</div>
+                    </div>
+                    <div class="d-flex rounded-4 bg-cardbg py-2 align-items-center">
+                        <div class="col-8 col-md-6 d-flex align-items-center ms-0 ms-md-4">
+                            <div class="custom-bg text-lite text-center rounded-circle d-flex align-items-center justify-content-center fs-7 me-2 me-md-4"
+                                style="width: 25px; height: 25px;">12</div>
+                            <img src="images/rank-12.png" class="rounded-circle me-3 d-none d-lg-block" alt="avatar1">
+                            <img style="width: 30px;" src="images/rank-12.png" class="rounded-circle me-3 d-block d-lg-none" alt="avatar1">
+                            <span class="fw-semibold d-none d-md-block">Davis Workman</span>
+                            <span class="fw-light d-block d-md-none">Davis Workman</span>
+                        </div>
+                        <div class="fontFamily col-2 text-green fw-semibold d-none d-md-block">+1.41%</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">602</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">12.4 ETH</div>
+                        <div class="fontFamily col-2 pe-3 d-block d-md-none fs-7 ms-4 text-light" style="white-space: nowrap;">12.4 ETH</div>
+                    </div>
+                    <div class="d-flex rounded-4 bg-cardbg py-2 align-items-center">
+                        <div class="col-8 col-md-6 d-flex align-items-center ms-0 ms-md-4">
+                            <div class="custom-bg text-lite text-center rounded-circle d-flex align-items-center justify-content-center fs-7 me-2 me-md-4"
+                                style="width: 25px; height: 25px;">13</div>
+                            <img src="images/rank-13.png" class="rounded-circle me-3 d-none d-lg-block" alt="avatar1">
+                            <img style="width: 30px;" src="images/rank-13.png" class="rounded-circle me-3 d-block d-lg-none" alt="avatar1">
+                            <span class="fw-semibold d-none d-md-block">Lindsey Lipshutz</span>
+                            <span class="fw-light d-block d-md-none">Lindsey Lipshutz</span>
+                        </div>
+                        <div class="fontFamily col-2 text-green fw-semibold d-none d-md-block">+1.41%</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">602</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">12.4 ETH</div>
+                        <div class="fontFamily col-2 pe-3 d-block d-md-none fs-7 ms-4 text-light" style="white-space: nowrap;">12.4 ETH</div>
+                    </div>
+                    <div class="d-flex rounded-4 bg-cardbg py-2 align-items-center">
+                        <div class="col-8 col-md-6 d-flex align-items-center ms-0 ms-md-4">
+                            <div class="custom-bg text-lite text-center rounded-circle d-flex align-items-center justify-content-center fs-7 me-2 me-md-4"
+                                style="width: 25px; height: 25px;">14</div>
+                            <img src="images/rank-14.png" class="rounded-circle me-3 d-none d-lg-block" alt="avatar1">
+                            <img style="width: 30px;" src="images/rank-14.png" class="rounded-circle me-3 d-block d-lg-none" alt="avatar1">
+                            <span class="fw-semibold d-none d-md-block">Randy Carder</span>
+                            <span class="fw-light d-block d-md-none">Randy Carder</span>
+                            
+                        </div>
+                        <div class="fontFamily col-2 text-green fw-semibold d-none d-md-block">+1.41%</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">602</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">12.4 ETH</div>
+                        <div class="fontFamily col-2 pe-3 d-block d-md-none fs-7 ms-4 text-light" style="white-space: nowrap;">12.4 ETH</div>
+                    </div>
+                    <div class="d-flex rounded-4 bg-cardbg py-2 align-items-center">
+                        <div class="col-8 col-md-6 d-flex align-items-center ms-0 ms-md-4">
+                            <div class="custom-bg text-lite text-center rounded-circle d-flex align-items-center justify-content-center fs-7 me-2 me-md-4"
+                                style="width: 25px; height: 25px;">15</div>
+                            <img src="images/rank-15.png" class="rounded-circle me-3 d-none d-lg-block" alt="avatar1">
+                            <img style="width: 30px;" src="images/rank-15.png" class="rounded-circle me-3 d-block d-lg-none" alt="avatar1">
+                            <span class="fw-semibold d-none d-md-block">Lydia Culhane</span>
+                            <span class="fw-light d-block d-md-none">Lydia Culhane</span>
+                        </div>
+                        <div class="fontFamily col-2 text-green fw-semibold d-none d-md-block">+1.41%</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">602</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">12.4 ETH</div>
+                        <div class="fontFamily col-2 pe-3 d-block d-md-none fs-7 ms-4 text-light" style="white-space: nowrap;">12.4 ETH</div>
+                    </div>
+                    <div class="d-flex rounded-4 bg-cardbg py-2 align-items-center">
+                        <div class="col-8 col-md-6 d-flex align-items-center ms-0 ms-md-4">
+                            <div class="custom-bg text-lite text-center rounded-circle d-flex align-items-center justify-content-center fs-7 me-2 me-md-4"
+                                style="width: 25px; height: 25px;">16</div>
+                            <img src="images/rank-16.png" class="rounded-circle me-3 d-none d-lg-block" alt="avatar1">
+                            <img style="width: 30px;" src="images/rank-16.png" class="rounded-circle me-3 d-block d-lg-none" alt="avatar1">
+                            <span class="fw-semibold d-none d-md-block">Rayna Bator</span>
+                            <span class="fw-light d-block d-md-none">Rayna Bator</span>
+                        </div>
+                        <div class="fontFamily col-2 text-green fw-semibold d-none d-md-block">+1.41%</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">602</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">12.4 ETH</div>
+                        <div class="fontFamily col-2 pe-3 d-block d-md-none fs-7 ms-4 text-light" style="white-space: nowrap;">12.4 ETH</div>
+                    </div>
+                    <div class="d-flex rounded-4 bg-cardbg py-2 align-items-center">
+                        <div class="col-8 col-md-6 d-flex align-items-center ms-0 ms-md-4">
+                            <div class="custom-bg text-lite text-center rounded-circle d-flex align-items-center justify-content-center fs-7 me-2 me-md-4"
+                                style="width: 25px; height: 25px;">17</div>
+                            <img src="images/rank-17.png" class="rounded-circle me-3 d-none d-lg-block" alt="avatar1">
+                            <img style="width: 30px;" src="images/rank-17.png" class="rounded-circle me-3 d-block d-lg-none" alt="avatar1">
+                            <span class="fw-semibold d-none d-md-block">Jocelyn Westervelt</span>
+                            <span class="fw-light d-block d-md-none">Jocelyn Westervelt</span>
+                        </div>
+                        <div class="fontFamily col-2 text-green fw-semibold d-none d-md-block">+1.41%</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">602</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">12.4 ETH</div>
+                        <div class="fontFamily col-2 pe-3 d-block d-md-none fs-7 ms-4 text-light" style="white-space: nowrap;">12.4 ETH</div>
+                    </div>
+                    <div class="d-flex rounded-4 bg-cardbg py-2 align-items-center">
+                        <div class="col-8 col-md-6 d-flex align-items-center ms-0 ms-md-4">
+                            <div class="custom-bg text-lite text-center rounded-circle d-flex align-items-center justify-content-center fs-7 me-2 me-md-4"
+                                style="width: 25px; height: 25px;">18</div>
+                            <img src="images/rank-1.png" class="rounded-circle me-3 d-none d-lg-block" alt="avatar1">
+                            <img style="width: 30px;" src="images/rank-1.png" class="rounded-circle me-3 d-block d-lg-none" alt="avatar1">
+                            <span class="fw-semibold d-none d-md-block">Marilyn Torff</span>
+                            <span class="fw-light d-block d-md-none">Marilyn Torff</span>
+                        </div>
+                        <div class="fontFamily col-2 text-green fw-semibold d-none d-md-block">+1.41%</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">602</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">12.4 ETH</div>
+                        <div class="fontFamily col-2 pe-3 d-block d-md-none fs-7 ms-4 text-light" style="white-space: nowrap;">12.4 ETH</div>
+                    </div>
+                    <div class="d-flex rounded-4 bg-cardbg py-2 align-items-center">
+                        <div class="col-8 col-md-6 d-flex align-items-center ms-0 ms-md-4">
+                            <div class="custom-bg text-lite text-center rounded-circle d-flex align-items-center justify-content-center fs-7 me-2 me-md-4"
+                                style="width: 25px; height: 25px;">19</div>
+                            <img src="images/rank-10.png" class="rounded-circle me-3 d-none d-lg-block" alt="avatar1">
+                            <img style="width: 30px;" src="images/rank-10.png" class="rounded-circle me-3 d-block d-lg-none" alt="avatar1">
+                            <span class="fw-semibold d-none d-md-block">Skylar Levin</span>
+                            <span class="fw-light d-block d-md-none">Skylar Levin</span>
+                        </div>
+                        <div class="fontFamily col-2 text-green fw-semibold d-none d-md-block">+1.41%</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">602</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">12.4 ETH</div>
+                        <div class="fontFamily col-2 pe-3 d-block d-md-none fs-7 ms-4 text-light" style="white-space: nowrap;">12.4 ETH</div>
+                    </div>
+                    <div class="d-flex rounded-4 bg-cardbg py-2 align-items-center">
+                        <div class="col-8 col-md-6 d-flex align-items-center ms-0 ms-md-4">
+                            <div class="custom-bg text-lite text-center rounded-circle d-flex align-items-center justify-content-center fs-7 me-2 me-md-4"
+                                style="width: 25px; height: 25px;">20</div>
+                            <img src="images/rank-3.png" class="rounded-circle me-3 d-none d-lg-block" alt="avatar1">
+                            <img style="width: 30px;" src="images/rank-3.png" class="rounded-circle me-3 d-block d-lg-none" alt="avatar1">
+                            <span class="fw-semibold d-none d-md-block">Terry Dorwart</span>
+                            <span class="fw-light d-block d-md-none">Terry Dorwart</span>
+                        </div>
+                        <div class="fontFamily col-2 text-green fw-semibold d-none d-md-block">+1.41%</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">602</div>
+                        <div class="fontFamily col-2 text-light d-none d-md-block">12.4 ETH</div>
+                        <div class="fontFamily col-2 pe-3 d-block d-md-none fs-7 ms-4 text-light" style="white-space: nowrap;">12.4 ETH</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- footer -->
+    <footer class="bg-cardbg px-0 px-md-5">
+        <div class="container">
+            <div class="row justify-content-between px-0 px-md-3 g-5 mx-auto">
+                <div class="col-12 col-lg-3">
+                    <div class="box">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid me-2" style="width: 25px;" src="images/Storefront.png"
+                                alt="Storefront">
+                            <h5 class="fw-semibold mb-0" style="font-family: Space Mono, monospace;">NFT
+                                Marketplace</h5>
+                        </div>
+                        <p class="text-footer">NFT marketplace UI created with Anima for Figma.</p>
+                        <p class="text-footer mb-1">Join our community</p>
+                        <div class="fs-3" role="button">
+                            <img src="images/liteDiscord.png" alt="liteDiscord">
+                            <img src="images/liteYt.png" alt="liteYt">
+                            <img src="images/liteX.png" alt="liteX">
+                            <img src="images/liteInsta.png" alt="liteInsta">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <div class="align-item-center d-flex flex-column">
+                        <h5 class="fw-semibold mb-4" style="font-family: Space Mono, monospace;">Explore</h5>
+                        <a href="#" class="text-decoration-none text-footer">Marketplace</a>
+                        <a href="#" class="text-decoration-none text-footer my-4">Rankings</a>
+                        <a href="#" class="text-decoration-none text-footer">Connect a wallet</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-5">
+                    <div class="box align-items-center">
+                        <h5 class="mb-4 fw-semibold" style="font-family: Space Mono, monospace;">Join Our Weekly Digest
+                        </h5>
+                        <p class="text-footer d-none d-lg-block">Get exclusive promotions & updates <br> straight to
+                            your inbox.</p>
+                        <p class="text-footer d-block d-lg-none">Get exclusive promotions & updates straight to your
+                            inbox.</p>
+                        <div id="subscribe" class="mt-3 d-none d-md-block position-relative" style="max-width: 400px;">
+                            <input class="form-control rounded-4 border-0 p-3" type="text"
+                                placeholder="Enter your email here">
+                            <a href="#"
+                                class="slight-hover text-decoration-none bg-purple text-light fw-bold rounded-4 p-3 px-5 position-absolute top-0 end-0">Subscribe
+                            </a>
+                        </div>
+
+                        <div id="subscribe" class="mt-4 d-block d-md-none d-flex flex-column gap-3">
+                            <input class="form-control rounded-pill border-0 p-2 px-4" type="text"
+                                placeholder="Enter your email here">
+                            <a href="#"
+                                class="slight-hover text-decoration-none bg-purple text-light fw-bold rounded-pill p-2 px-4 text-center">
+                                <i class="bi bi-envelope me-2"></i>Subscribe
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-3 mt-3 mx-md-0 mx-5" style="border-top:  1px solid #858584; font-size: 12px;">
+                <div class="col-12">
+                    <p class="text-footer">Ⓒ NFT Market. Use this template freely.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

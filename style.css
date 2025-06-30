@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  background-color: #2B2B2B !important;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p {
+  color: white !important;
+}
+
+section {
+  padding: 40px 0 !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+#nftHighlight {
+  background-image: linear-gradient(rgba(161, 89, 255, 0), rgba(162, 89, 255, 1)), url('images/NFT-Highlight.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+@media (max-width: 991.98px) {
+  #nftHighlight {
+    background-image: linear-gradient(rgba(161, 89, 255, 0), rgba(162, 89, 255, 1)), url('images/NFT-highMobile.png');
+    height: 80vh;
+  }
+}
+
+@media (max-width: 678px) {
+  #setupCard {
+    height: 160px !important;
+  }
+}
+
+input:focus,
+input:active {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
+.bg-custom-md {
+  background-color: transparent !important;
+}
+
+
+@media (min-width: 768px) {
+  .bg-custom-md {
+    background-color: #3B3B3B !important;
+  }
+}
+
+
+.custom-artist {
+  background-image: linear-gradient(rgba(161, 89, 255, 0), rgba(162, 89, 255, 1)), url('images/artistCoverImg.png') !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50vh;
+}
+
+@media (max-width: 576px) {
+  .custom-artist {
+    height: 30vh;
+  }
+}
+
+
+.fontFamily {
+  font-family: 'Space mano', monospace !important;
+}
+
+.custom-bg {
+  background-color: #2B2B2B !important;
+}
+
+
+@media (max-width: 768px) {
+  .custom-bg {
+    background-color: #3B3B3B !important;
+  }
+}
+
+.slight-hover {
+  transition: all 0.3s ease !important;
+  transform: scale(1) !important;
+  cursor: pointer !important;
+}
+
+.slight-hover:hover {
+  transition: all 0.3s ease !important;
+  transform: scale(0.95) !important;
+}
